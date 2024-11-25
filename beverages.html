@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url("https://www.shutterstock.com/image-photo/cocktails-assortment-served-on-dark-600nw-2031909332.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 60px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-bottom: 50px;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 165, 0, 0.8);
+        }
+        .beverages-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .beverage-category {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            width: 250px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .beverage-category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+        }
+        .category-title {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #FFA500;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .item {
+            font-family: 'Verdana', sans-serif;
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+            list-style-type: none;
+        }
+        .item span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="btn">Back to Home</a>
+    <h1>Beverages</h1>
+    
+    <div class="beverages-container">
+        <!-- Smoothies Category -->
+        <div class="beverage-category">
+            <div class="category-title">Smoothies</div>
+            <ul>
+                <li class="item"><span>Mango</span></li>
+                <li class="item"><span>Banana</span></li>
+                <li class="item"><span>Green</span></li>
+                <li class="item"><span>Avocado</span></li>
+                <li class="item"><span>Oats</span></li>
+            </ul>
+        </div>
+
+        <!-- Mojitos Category -->
+        <div class="beverage-category">
+            <div class="category-title">Mojitos</div>
+            <ul>
+                <li class="item"><span>Lime</span></li>
+                <li class="item"><span>Apple</span></li>
+                <li class="item"><span>Passion</span></li>
+                <li class="item"><span>Black Current</span></li>
+                <li class="item"><span>Guava</span></li>
+            </ul>
+        </div>
+
+        <!-- Hot Beverages Category -->
+        <div class="beverage-category">
+            <div class="category-title">Hot Beverages</div>
+            <ul>
+                <li class="item"><span>Coffee</span></li>
+                <li class="item"><span>Tea</span></li>
+                <li class="item"><span>Matcha</span></li>
+                <li class="item"><span>Hot Chocolate</span></li>
+                <li class="item"><span>Masala Chai</span></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
